@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     private List<Interactible>  _inventory;
     public Interactible[] OpenDoorsCheat;
     
-        private void Start()
+    private void Start()
     {
         _canvasManager = CanvasManager.instance;
 
@@ -53,7 +53,10 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.F) && _currentInteractible != null)
         {
             if (_currentInteractible.isPickable)
+            {
+                _currentInteractible.Interact();
                 AddToInventory(_currentInteractible);
+            }
             else if (HasRequirements(_currentInteractible))
                 Interact(_currentInteractible);
         }
@@ -107,6 +110,7 @@ public class Player : MonoBehaviour
         {
             _inventory.Add(pickable);
             pickable.gameObject.SetActive(false);
+            Debug.Log("Adds objects to inventory");
         }
     }
 
@@ -118,6 +122,7 @@ public class Player : MonoBehaviour
     private void RemoveFromInventory(Interactible pickable)
     {
         _inventory.Remove(pickable);
+        Debug.Log("Uses the object");
     }
 
 }

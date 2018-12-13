@@ -7,20 +7,26 @@ public class Interactible : MonoBehaviour
     public bool isPickable;
     public bool allowsPlacement;
     public bool allowsMultipleInteractions;
-    public bool isRotatable;
     public string requirementText;
     public string interactionText;
     public bool consumesRequirements;
     public Interactible[] inventoryRequirements;
     public Interactible[] indirectInteractibles;
     public Interactible[] indirectActivations;
+    [HideInInspector]
+    public bool isRotatable;
+    [HideInInspector]
     public int rotations;
+    Collider m_Collider;
 
     public void Activate()
     {
         isActive = true;
+        isInteractive = true;
+        allowsPlacement = true;
+        m_Collider = GetComponent<Collider>();
+        m_Collider.enabled = true;
 
-        PlayActivateAnimation();
     } 
 
     public void Interact()
@@ -36,6 +42,7 @@ public class Interactible : MonoBehaviour
             InteractIndirects();
 
             ActivateIndirects();
+            PlayActivateAnimation();
 
             if (!allowsMultipleInteractions)
                 isInteractive = false;
@@ -90,7 +97,7 @@ public class Interactible : MonoBehaviour
 
     private void PlacePlaceables()
     {
-        if (allowsPlacement)
+        if (allowsPlacement && isActive)
         {
             if (indirectInteractibles != null)
             {
