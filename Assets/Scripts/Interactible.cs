@@ -42,6 +42,7 @@ public class Interactible : MonoBehaviour
             InteractIndirects();
 
             ActivateIndirects();
+
             PlayActivateAnimation();
 
             if (!allowsMultipleInteractions)
