@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Teacher
   - Pecinha
+  - SphereCollider
   layers:
   - Default
   - TransparentFX
