@@ -36,6 +36,8 @@ public class Interactible : MonoBehaviour
             PlacePlaceables();
 
             PlayInteractAnimation();
+			
+			Rotatequadrados();
 
         if (isActive)
         {
@@ -147,6 +149,21 @@ public class Interactible : MonoBehaviour
 
         }
     }
+	///
+	private void Rotatequadrados() 
+	{
+		if(isInteractive)
+		{
+			if(gameObject.name == "Pecinha")
+			{
+				if(Input.GetKeyDown(KeyCode.F))
+				{
+					Debug.Log("Funciona");
+				}
+			}	
+		}
+	}
+	/////
 
 
 }

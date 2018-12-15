@@ -65,6 +65,17 @@ public class Player : MonoBehaviour
             for (int i = 0; i < OpenDoorsCheat.Length; ++i)
                 OpenDoorsCheat[i].Interact();
         }
+		
+		////pecinhas
+		/*
+		if (Input.GetKeyDown(KeyCode.F) && _currentInteractible != null)
+        {	
+		if (_currentInteractible.tag == "Pecinha")
+            {
+                Debug.Log("Funciona!!!");
+            }
+		}
+		/////  */
     }
 
     private void SetInteractible(Interactible newInteractible)
