@@ -4,22 +4,29 @@ using UnityEngine;
 
 public class Puzzle3Collider : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+	public GameObject[] SphereColliders1;
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	public List<GameObject> SphereColliders;
 	
-	void OnCollisionEnter (Collision col)
+	/*
+	void OnTriggerEnter (Collider col)
 	{
-		if(col.gameObject.name == "SphereCollider")
+		if(col.gameObject.tag == "SphereCollider")
 		{
 			Debug.Log("Colidiu!");
 		}
 	}
+	*/
 	
+	public void OnTriggerEnter (Collider col)
+	{
+		for (int i = 0; i < SphereColliders1.Length; ++i)
+			{
+            if(col.SphereColliders1[i].tag == "SphereCollider")
+				{			
+				  Debug.Log("Funcionou!");
+				}
+			}	
+	}
 }
+
