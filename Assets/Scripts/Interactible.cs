@@ -18,6 +18,7 @@ public class Interactible : MonoBehaviour
     [HideInInspector]
     public int rotations;
     Collider m_Collider;
+	public bool isRotatableQuadrado;
 
     public void Activate()
     {
@@ -154,14 +155,14 @@ public class Interactible : MonoBehaviour
 	{
 		if(isInteractive)
 		{
-			if(gameObject.name == "Pecinha")
+			if(isRotatableQuadrado)
 			{
-				if(Input.GetKeyDown(KeyCode.F))
-				{
-					Debug.Log("Funciona");
-				}
-			}	
-		}
+					if(Input.GetKeyDown(KeyCode.F))
+					{
+						Debug.Log("Funciona");
+					}
+			}
+		}	
 	}
 	/////
 
