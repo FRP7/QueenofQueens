@@ -71,7 +71,7 @@ public class Player : MonoBehaviour
     {
         _currentInteractible = newInteractible;
 
-        if (HasAtLeastOneRequirement(_currentInteractible)) _currentInteractible.requirementText = "We need more of those texts!";
+        if (HasAtLeastOneRequirement(_currentInteractible)) _currentInteractible.requirementText = "We need more of those Hieroglyphs!";
 
         if (HasRequirements(_currentInteractible))
             _canvasManager.ShowInteractionPanel(_currentInteractible.interactionText);
