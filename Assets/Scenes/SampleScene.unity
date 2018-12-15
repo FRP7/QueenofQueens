@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44795793, g: 0.4979596, b: 0.5754917, a: 1}
+  m_IndirectSpecularColor: {r: 0.4479578, g: 0.49795955, b: 0.5754917, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14720,7 +14720,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1976716044}
-  - component: {fileID: 1976716046}
   - component: {fileID: 1976716045}
   - component: {fileID: 1976716047}
   m_Layer: 0
@@ -14763,55 +14762,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 0}
---- !u!114 &1976716046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1976716043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16cfce365f6f93b4f97d58815d5cabb9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SphereCollider1:
-  - {fileID: 632173635}
-  - {fileID: 1328950035}
-  - {fileID: 42759384}
-  - {fileID: 1897445876}
-  - {fileID: 308278840}
-  - {fileID: 49570895}
-  - {fileID: 1525571646}
-  - {fileID: 2095782542}
-  - {fileID: 505237205}
-  - {fileID: 1233180961}
-  - {fileID: 1367790215}
-  - {fileID: 1504482127}
-  - {fileID: 1882442578}
-  - {fileID: 264663402}
-  - {fileID: 238447430}
-  - {fileID: 502932348}
-  - {fileID: 2079141652}
-  - {fileID: 437454292}
-  SphereCollider:
-  - {fileID: 632173635}
-  - {fileID: 1328950035}
-  - {fileID: 42759384}
-  - {fileID: 1897445876}
-  - {fileID: 308278840}
-  - {fileID: 49570895}
-  - {fileID: 1525571646}
-  - {fileID: 2095782542}
-  - {fileID: 505237205}
-  - {fileID: 1233180961}
-  - {fileID: 1367790215}
-  - {fileID: 1504482127}
-  - {fileID: 1882442578}
-  - {fileID: 264663402}
-  - {fileID: 238447430}
-  - {fileID: 502932348}
-  - {fileID: 2079141652}
-  - {fileID: 437454292}
 --- !u!54 &1976716047
 Rigidbody:
   m_ObjectHideFlags: 0

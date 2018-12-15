@@ -18,6 +18,7 @@ public class Puzzle3Collider : MonoBehaviour {
 	}
 	*/
 	
+	/*
 	public void OnTriggerEnter (Collider col)
 	{
 		for (int i = 0; i < SphereColliders1.Length; ++i)
@@ -28,5 +29,6 @@ public class Puzzle3Collider : MonoBehaviour {
 				}
 			}	
 	}
+	*/
 }
 
