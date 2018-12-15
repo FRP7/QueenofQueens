@@ -35,6 +35,8 @@ public class Puzzle1Collider : MonoBehaviour
             BothColliding = true;
             Animator anim = Animates.GetComponent<Animator>();
             anim.SetTrigger("Interact");
+            
         }
     }
+   
 }

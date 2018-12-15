@@ -21,6 +21,7 @@ public class Interactible : MonoBehaviour
 
     public void Activate()
     {
+    
         isActive = true;
         isInteractive = true;
         allowsPlacement = true;

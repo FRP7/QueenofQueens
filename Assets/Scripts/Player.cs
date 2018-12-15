@@ -71,6 +71,8 @@ public class Player : MonoBehaviour
     {
         _currentInteractible = newInteractible;
 
+        if (HasAtLeastOneRequirement(_currentInteractible)) _currentInteractible.requirementText = "We need more of those texts!";
+
         if (HasRequirements(_currentInteractible))
             _canvasManager.ShowInteractionPanel(_currentInteractible.interactionText);
         else
@@ -83,7 +85,13 @@ public class Player : MonoBehaviour
 
         _canvasManager.HideInteractionPanel();
     }
-
+    private bool HasAtLeastOneRequirement(Interactible interactible)
+    {
+        for (int i = 0; i < interactible.inventoryRequirements.Length; ++i)
+            if (HasInInventory(interactible.inventoryRequirements[i]))
+                return true;
+        return false;
+    }
     private bool HasRequirements(Interactible interactible)
     {
         for (int i = 0; i < interactible.inventoryRequirements.Length; ++i)

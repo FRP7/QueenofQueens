@@ -5,6 +5,7 @@ using UnityEngine;
 public class unlocks_camera : MonoBehaviour {
 
     public Camera SecondaryCamera;
+    public GameObject Hyerogliph;
 
     private void Start()
     {
@@ -15,8 +16,12 @@ public class unlocks_camera : MonoBehaviour {
     {
         SecondaryCamera.enabled = true;
     }
-public void HidesCamera()
+    public void HidesCamera()
     {
         SecondaryCamera.enabled = false;
+    }
+    public void ActivateHyerogliph()
+    {
+        Hyerogliph.SetActive(true);
     }
 }
