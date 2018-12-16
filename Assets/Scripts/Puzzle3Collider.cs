@@ -82,10 +82,10 @@ public class Puzzle3Collider : MonoBehaviour {
     }
     public void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.name == "SphereCollider1(1)")
+        if (col.gameObject.name == "SphereCollider11")
         {
             Colliding11 = true;
-            Debug.Log("SphereCollider1(1)");
+            Debug.Log("SphereCollider11");
         }
 		if (col.gameObject.name == "SphereCollider1")
         {
@@ -97,25 +97,25 @@ public class Puzzle3Collider : MonoBehaviour {
             Colliding2 = true;
             Debug.Log("SphereCollider2");
         }
-		if (col.gameObject.name == "SphereCollider2(1)")
+		if (col.gameObject.name == "SphereCollider21")
         {
             Colliding21 = true;
-            Debug.Log("SphereCollider2(1)");
+            Debug.Log("SphereCollider21");
         }
 		if (col.gameObject.name == "SphereCollider3")
         {
             Colliding3 = true;
             Debug.Log("SphereCollider3");
         }
-		if (col.gameObject.name == "SphereCollider3(1)")
+		if (col.gameObject.name == "SphereCollider31")
         {
             Colliding31 = true;
-            Debug.Log("SphereCollider3(1)");
+            Debug.Log("SphereCollider31");
         }
-		if (col.gameObject.name == "SphereCollider4(1)")
+		if (col.gameObject.name == "SphereCollider41")
         {
             Colliding41 = true;
-            Debug.Log("SphereCollider4(1)");
+            Debug.Log("SphereCollider41");
         }
 		if (col.gameObject.name == "SphereCollider4")
         {
@@ -127,25 +127,25 @@ public class Puzzle3Collider : MonoBehaviour {
             Colliding5 = true;
             Debug.Log("SphereCollider5");
         }
-		if (col.gameObject.name == "SphereCollider5(1)")
+		if (col.gameObject.name == "SphereCollider51")
         {
             Colliding51 = true;
-            Debug.Log("SphereCollider5(1)");
+            Debug.Log("SphereCollider51");
         }
-		if (col.gameObject.name == "SphereCollider6(1)")
+		if (col.gameObject.name == "SphereCollider61")
         {
             Colliding61 = true;
-            Debug.Log("SphereCollider6(1)");
+            Debug.Log("SphereCollider61");
         }
 		if (col.gameObject.name == "SphereCollider6")
         {
             Colliding6 = true;
             Debug.Log("SphereCollider6");
         }
-		if (col.gameObject.name == "SphereCollider7(1)")
+		if (col.gameObject.name == "SphereCollider71")
         {
             Colliding71 = true;
-            Debug.Log("SphereCollider7(1)");
+            Debug.Log("SphereCollider71");
         }
 		if (col.gameObject.name == "SphereCollider7")
         {
@@ -157,15 +157,15 @@ public class Puzzle3Collider : MonoBehaviour {
             Colliding8 = true;
             Debug.Log("SphereCollider8");
         }
-		if (col.gameObject.name == "SphereCollider8(1)")
+		if (col.gameObject.name == "SphereCollider81")
         {
             Colliding81 = true;
-            Debug.Log("SphereCollider8(1)");
+            Debug.Log("SphereCollider81");
         }
-		if (col.gameObject.name == "SphereCollider9(1)")
+		if (col.gameObject.name == "SphereCollider91")
         {
             Colliding91 = true;
-            Debug.Log("SphereCollider9(1)");
+            Debug.Log("SphereCollider91");
         }
 		if (col.gameObject.name == "SphereCollider9")
         {
