@@ -5,8 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Teacher
-  - Pecinha
-  - SphereCollider
+  - Puzzle2
   layers:
   - Default
   - TransparentFX

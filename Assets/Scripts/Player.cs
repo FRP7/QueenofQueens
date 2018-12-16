@@ -11,9 +11,13 @@ public class Player : MonoBehaviour
     private Camera              _camera;
     private RaycastHit          _raycastHit;
     private Interactible        _currentInteractible;
-    private List<Interactible>  _inventory;
+    public List<Interactible>  _inventory;
     public Interactible[] OpenDoorsCheat;
-    
+    public Interactible heart;
+    public Interactible pickableHeart;
+    public Interactible balance;
+    public Interactible jewel;
+
     private void Start()
     {
         _canvasManager = CanvasManager.instance;
@@ -50,32 +54,25 @@ public class Player : MonoBehaviour
 
     private void CheckForInteractionClick()
     {
-        if (Input.GetKey(KeyCode.F) && _currentInteractible != null)
+        if (Input.GetKeyDown(KeyCode.F) && _currentInteractible != null)
         {
+
             if (_currentInteractible.isPickable)
             {
                 _currentInteractible.Interact();
                 AddToInventory(_currentInteractible);
             }
             else if (HasRequirements(_currentInteractible))
+            {
+                
                 Interact(_currentInteractible);
+            }
         }
         if(Input.GetKey(KeyCode.P))
         {
             for (int i = 0; i < OpenDoorsCheat.Length; ++i)
                 OpenDoorsCheat[i].Interact();
         }
-		
-		////pecinhas
-		/*
-		if (Input.GetKeyDown(KeyCode.F) && _currentInteractible != null)
-        {	
-		if (_currentInteractible.tag == "Pecinha")
-            {
-                Debug.Log("Funciona!!!");
-            }
-		}
-		/////  */
     }
 
     private void SetInteractible(Interactible newInteractible)
@@ -84,6 +81,10 @@ public class Player : MonoBehaviour
         if (_currentInteractible.tag == "Teacher")
         {
             if (HasAtLeastOneRequirement(_currentInteractible)) _currentInteractible.requirementText = "We need more of those Hieroglyphs!";
+        }
+        if (_currentInteractible.tag == "Puzzle2")
+        {
+            if (HasInInventory(pickableHeart)) _currentInteractible.interactionText = "Place Heart of Osiris";
         }
 
         if (HasRequirements(_currentInteractible))
@@ -120,9 +121,19 @@ public class Player : MonoBehaviour
         {
             for (int i = 0; i < interactible.inventoryRequirements.Length; ++i)
                 RemoveFromInventory(interactible.inventoryRequirements[i]);
+
+            if (_currentInteractible.State == 1)
+            {
+                heart.gameObject.SetActive(true);
+                heart.isInteractive = false;
+            }
+            else
+                jewel.gameObject.SetActive(true);
+
         }
 
         interactible.Interact();
+
     }
 
     private void AddToInventory(Interactible pickable)
@@ -133,9 +144,13 @@ public class Player : MonoBehaviour
             pickable.gameObject.SetActive(false);
             Debug.Log("Adds objects to inventory");
         }
+        if (pickable == pickableHeart)
+        {
+            balance.State = 1;
+        }
     }
 
-    private bool HasInInventory(Interactible pickable)
+    public bool HasInInventory(Interactible pickable)
     {
         return _inventory.Contains(pickable);
     }

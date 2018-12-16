@@ -13,44 +13,75 @@ public class Interactible : MonoBehaviour
     public Interactible[] inventoryRequirements;
     public Interactible[] indirectInteractibles;
     public Interactible[] indirectActivations;
-    [HideInInspector]
+    public bool isPuzzle2;
     public bool isRotatable;
     [HideInInspector]
     public int rotations;
+    [HideInInspector]
+    public int State;
     Collider m_Collider;
 	public bool isRotatableQuadrado;
 
     public void Activate()
     {
-    
-        isActive = true;
+        isActive = false;
         isInteractive = true;
-        allowsPlacement = true;
         m_Collider = GetComponent<Collider>();
         m_Collider.enabled = true;
 
-    } 
+    }
+    public void Deactivate()
+    {
+        isInteractive = false;
+        isActive = false;
+        m_Collider = GetComponent<Collider>();
+        m_Collider.enabled = false;
+
+    }
 
     public void Interact()
     {
-        
+		
+		Rotatequadrados();
+		
+        if (isPuzzle2)
+        {
+            if (isInteractive)
+            {
+                PlayInteractAnimation();
+                InteractIndirects();
+            }
+            else 
+            {
+
+                InteractIndirects();
+
+                ActivateIndirects();
+
+                PlayActivateAnimation();
+
+                if (!allowsMultipleInteractions)
+                    isInteractive = false;
+            }
+        }
+        else
+        {
             PlacePlaceables();
 
             PlayInteractAnimation();
-			
-			Rotatequadrados();
 
-        if (isActive)
-        {
+            if (isActive)
+            {
 
-            InteractIndirects();
+                InteractIndirects();
 
-            ActivateIndirects();
+                ActivateIndirects();
 
-            PlayActivateAnimation();
+                PlayActivateAnimation();
 
-            if (!allowsMultipleInteractions)
-                isInteractive = false;
+                if (!allowsMultipleInteractions)
+                    isInteractive = false;
+            }
         }
     }
 
@@ -67,9 +98,10 @@ public class Interactible : MonoBehaviour
         if (!isRotatable)
         {
             Animator animator = GetComponent<Animator>();
-
+            
             if (animator != null)
                 animator.SetTrigger("Interact");
+                Debug.Log("Animacao interact");
         }
     }
 
@@ -150,7 +182,7 @@ public class Interactible : MonoBehaviour
 
         }
     }
-	///
+	
 	private void Rotatequadrados() 
 	{
 		if(isInteractive)
@@ -159,13 +191,12 @@ public class Interactible : MonoBehaviour
 			{
 					if(Input.GetKeyDown(KeyCode.F))
 					{
-						//Debug.Log("Funciona");
+						Debug.Log("Funciona");
 						transform.Rotate(0,0,90);
 					}
 			}
 		}	
 	}
-	/////
 
 
 }
