@@ -4,57 +4,6 @@ using UnityEngine;
 
 public class Puzzle3Collider : MonoBehaviour {
 
-	//public GameObject[] SphereColliders1;
-	
-	///public List<GameObject> SphereColliders;
-	
-	/*
-	void OnTriggerEnter (Collider col)
-	{
-		if(col.gameObject.tag == "SphereCollider")
-		{
-			Debug.Log("Colidiu!");
-		}
-	}
-	*/
-	
-	/*
-	public void OnTriggerEnter (Collider col)
-	{
-		for (int i = 0; i < SphereColliders1.Length; ++i)
-			{
-            if(col.SphereColliders1[i].tag == "SphereCollider")
-				{			
-				  Debug.Log("Funcionou!");
-				}
-			}	
-	}
-	*/
-	
-	/*void OnTriggerEnter (Collider col)
-	{
-		if(col.gameObject.name == "SphereCollider1(1)" + 
-			col.gameObject.name == "SphereCollider1" + 
-				col.gameObject.name == "SphereCollider2" + 
-					col.gameObject.name == "SphereCollider2(1)" + 
-						col.gameObject.name == "SphereCollider3" + 
-							col.gameObject.name == "SphereCollider3(1)" + 
-								col.gameObject.name == "SphereCollider4(1)" +
-							col.gameObject.name == "SphereCollider4" +
-						col.gameObject.name == "SphereCollider5" + 
-					col.gameObject.name == "SphereCollider5(1)" +
-				col.gameObject.name == "SphereCollider6(1)"	+
-			col.gameObject.name == "SphereCollider6" +
-		col.gameObject.name == "SphereCollider7(1)" + 
-	col.gameObject.name == "SphereCollider7" + 
-		col.gameObject.name == "SphereCollider8" + 
-			col.gameObject.name == "SphereCollider8(1)" + 
-				col.gameObject.name == "SphereCollider9(1)" + 
-					col.gameObject.name == "SphereCollider9")
-		{
-			Debug.Log("Funcionou!");
-		}
-	}*/
 	
 	bool Colliding11 = false;
 	bool Colliding1 = false;

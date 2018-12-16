@@ -7,6 +7,7 @@ public class DoorSound : MonoBehaviour {
     public AudioSource m_stone_door;
 
     public void PlayDoorSound () {
+        m_stone_door = GetComponent<AudioSource>();
         m_stone_door.Play();
 	}
 	
