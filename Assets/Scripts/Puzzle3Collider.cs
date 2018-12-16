@@ -176,13 +176,6 @@ public class Puzzle3Collider : MonoBehaviour {
 
     public void CheckForAllCollisions()
     {
-        /*if (CollidingInner == true && CollidingOuter == true)
-        {
-            AllColliding = true;
-            Animator anim = Animates.GetComponent<Animator>();
-            anim.SetTrigger("Interact");
-            
-        }*/
 		
 		if (Colliding11 == true && Colliding1 == true && Colliding2 == true &&
 				Colliding21 == true && Colliding3 == true && Colliding31 == true &&
