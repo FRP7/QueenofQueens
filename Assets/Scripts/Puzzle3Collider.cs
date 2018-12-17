@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Puzzle3Collider : MonoBehaviour {
 
-	
-	bool Colliding11 = false;
+    public GameObject Reward_pointer;
+    bool Colliding11 = false;
 	bool Colliding1 = false;
 	bool Colliding2 = false;
 	bool Colliding21 = false;
@@ -28,6 +28,7 @@ public class Puzzle3Collider : MonoBehaviour {
     private void Update()
     {
         CheckForAllCollisions();
+        ActivatesReward();
     }
     public void OnTriggerEnter(Collider col)
     {
@@ -134,10 +135,19 @@ public class Puzzle3Collider : MonoBehaviour {
 								Colliding81 == true && Colliding91 == true && Colliding9 == true)
         {
             AllColliding = true;
-            Debug.Log("Funciona for fuck sake");
+           // Debug.Log("Funciona finally");
         }
 		
     }
-	
+
+    public void ActivatesReward()
+    {
+        if (AllColliding == true)
+        {
+            Animator animation = Reward_pointer.GetComponent<Animator>();
+            animation.SetTrigger("Interact");
+        }
+    }
+
 }
 

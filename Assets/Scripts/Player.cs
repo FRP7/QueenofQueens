@@ -80,7 +80,10 @@ public class Player : MonoBehaviour
         _currentInteractible = newInteractible;
         if (_currentInteractible.tag == "Teacher")
         {
-            if (HasAtLeastOneRequirement(_currentInteractible)) _currentInteractible.requirementText = "We need more of those Hieroglyphs!";
+            if (HasAtLeastOneRequirement(_currentInteractible)) {
+                _currentInteractible.requirementText = "Bring me more Hieroglyphs and dont forget the Jewel!";
+                    if(HasInInventory(jewel)) _currentInteractible.requirementText = "Bring me more Hieroglyphs !";
+            }
         }
         if (_currentInteractible.tag == "Puzzle2")
         {
@@ -126,6 +129,7 @@ public class Player : MonoBehaviour
             {
                 heart.gameObject.SetActive(true);
                 heart.isInteractive = false;
+                AddToInventory(jewel);
             }
             else
                 jewel.gameObject.SetActive(true);

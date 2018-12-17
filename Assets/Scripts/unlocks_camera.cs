@@ -22,6 +22,7 @@ public class unlocks_camera : MonoBehaviour {
     }
     public void ActivateHyerogliph()
     {
+        if(Hyerogliph != null)
         Hyerogliph.SetActive(true);
     }
 }

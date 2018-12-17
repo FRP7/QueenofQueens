@@ -191,7 +191,6 @@ public class Interactible : MonoBehaviour
 			{
 					if(Input.GetKeyDown(KeyCode.F))
 					{
-						Debug.Log("Funciona");
 						transform.Rotate(0,0,90);
 					}
 			}
