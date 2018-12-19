@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     public Interactible pickableHeart;
     public Interactible balance;
     public Interactible jewel;
+    public int itemsRequiredInInv;
 
     private void Start()
     {
@@ -83,6 +84,7 @@ public class Player : MonoBehaviour
             if (HasAtLeastOneRequirement(_currentInteractible)) {
                 _currentInteractible.requirementText = "Bring me more Hieroglyphs and dont forget the Jewel!";
                     if(HasInInventory(jewel)) _currentInteractible.requirementText = "Bring me more Hieroglyphs !";
+                if (HasLengthMinuesOne(_currentInteractible)) _currentInteractible.requirementText = "Acording to the hierogliphs u must place the Heart to escape with the jewel";
             }
         }
         if (_currentInteractible.tag == "Puzzle2")
@@ -107,6 +109,18 @@ public class Player : MonoBehaviour
         for (int i = 0; i < interactible.inventoryRequirements.Length; ++i)
             if (HasInInventory(interactible.inventoryRequirements[i]))
                 return true;
+        return false;
+    }
+    private bool HasLengthMinuesOne(Interactible interactible)
+    {
+
+        for (int i = 0; i < interactible.inventoryRequirements.Length; ++i)
+            if (HasInInventory(interactible.inventoryRequirements[i]))
+            {
+                itemsRequiredInInv++;
+                if( interactible.inventoryRequirements.Length - 1 == itemsRequiredInInv)
+                return true;
+            }
         return false;
     }
     private bool HasRequirements(Interactible interactible)
