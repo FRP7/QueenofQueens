@@ -2057,6 +2057,7 @@ MonoBehaviour:
   State: 0
   isRotatableQuadrado: 0
   isswordpickable: 0
+  allowsswordplacement: 0
 --- !u!65 &200961156
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2267,6 +2268,7 @@ MonoBehaviour:
   State: 0
   isRotatableQuadrado: 0
   isswordpickable: 0
+  allowsswordplacement: 0
 --- !u!64 &214114372
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2934,7 +2936,8 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 0
-  isswordpickable: 0
+  isswordpickable: 1
+  allowsswordplacement: 0
 --- !u!65 &292323784
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3483,6 +3486,7 @@ MonoBehaviour:
   State: 0
   isRotatableQuadrado: 0
   isswordpickable: 0
+  allowsswordplacement: 0
 --- !u!65 &345419509
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7036,7 +7040,8 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 0
-  isswordpickable: 0
+  isswordpickable: 1
+  allowsswordplacement: 0
 --- !u!65 &827054407
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7325,6 +7330,7 @@ MonoBehaviour:
   State: 0
   isRotatableQuadrado: 0
   isswordpickable: 0
+  allowsswordplacement: 0
 --- !u!82 &862579272
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7618,6 +7624,7 @@ MonoBehaviour:
   State: 0
   isRotatableQuadrado: 0
   isswordpickable: 0
+  allowsswordplacement: 0
 --- !u!1 &930413949
 GameObject:
   m_ObjectHideFlags: 0
@@ -8405,6 +8412,7 @@ MonoBehaviour:
   State: 0
   isRotatableQuadrado: 0
   isswordpickable: 0
+  allowsswordplacement: 0
 --- !u!65 &992297440
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9054,6 +9062,7 @@ MonoBehaviour:
   State: 0
   isRotatableQuadrado: 0
   isswordpickable: 0
+  allowsswordplacement: 0
 --- !u!95 &1070511937
 Animator:
   serializedVersion: 3
@@ -9146,6 +9155,7 @@ MonoBehaviour:
   State: 0
   isRotatableQuadrado: 0
   isswordpickable: 0
+  allowsswordplacement: 1
 --- !u!114 &1115862314 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114219734589780404, guid: 05521cc354a44594da1eb2aa145e30cb,
@@ -9467,6 +9477,7 @@ MonoBehaviour:
   State: 0
   isRotatableQuadrado: 0
   isswordpickable: 0
+  allowsswordplacement: 0
 --- !u!1 &1153777159 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1873276507756570, guid: 05521cc354a44594da1eb2aa145e30cb,
@@ -9501,6 +9512,7 @@ MonoBehaviour:
   State: 0
   isRotatableQuadrado: 0
   isswordpickable: 0
+  allowsswordplacement: 0
 --- !u!64 &1153777162
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10595,6 +10607,7 @@ MonoBehaviour:
   State: 0
   isRotatableQuadrado: 0
   isswordpickable: 0
+  allowsswordplacement: 0
 --- !u!1 &1215836926
 GameObject:
   m_ObjectHideFlags: 0
@@ -12181,6 +12194,7 @@ MonoBehaviour:
   State: 0
   isRotatableQuadrado: 0
   isswordpickable: 0
+  allowsswordplacement: 0
 --- !u!65 &1356233665
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12226,6 +12240,7 @@ MonoBehaviour:
   State: 0
   isRotatableQuadrado: 0
   isswordpickable: 0
+  allowsswordplacement: 0
 --- !u!65 &1357724818
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15232,6 +15247,7 @@ MonoBehaviour:
   State: 0
   isRotatableQuadrado: 0
   isswordpickable: 0
+  allowsswordplacement: 0
 --- !u!4 &1828867244 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010477212442, guid: 49547c987cae26f41b6395c299b0dc50,
@@ -15578,6 +15594,7 @@ MonoBehaviour:
   State: 0
   isRotatableQuadrado: 0
   isswordpickable: 0
+  allowsswordplacement: 0
 --- !u!65 &1878637570
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16323,7 +16340,8 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 0
-  isswordpickable: 0
+  isswordpickable: 1
+  allowsswordplacement: 0
 --- !u!65 &1988185203
 BoxCollider:
   m_ObjectHideFlags: 0
