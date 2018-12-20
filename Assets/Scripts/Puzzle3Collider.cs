@@ -35,92 +35,92 @@ public class Puzzle3Collider : MonoBehaviour {
         if (col.gameObject.name == "SphereCollider11")
         {
             Colliding11 = true;
-            Debug.Log("SphereCollider11");
+           // Debug.Log("SphereCollider11");
         }
 		if (col.gameObject.name == "SphereCollider1")
         {
             Colliding1 = true;
-            Debug.Log("SphereCollider1");
+           // Debug.Log("SphereCollider1");
         }
 		if (col.gameObject.name == "SphereCollider2")
         {
             Colliding2 = true;
-            Debug.Log("SphereCollider2");
+           // Debug.Log("SphereCollider2");
         }
 		if (col.gameObject.name == "SphereCollider21")
         {
             Colliding21 = true;
-            Debug.Log("SphereCollider21");
+          //  Debug.Log("SphereCollider21");
         }
 		if (col.gameObject.name == "SphereCollider3")
         {
             Colliding3 = true;
-            Debug.Log("SphereCollider3");
+          //  Debug.Log("SphereCollider3");
         }
 		if (col.gameObject.name == "SphereCollider31")
         {
             Colliding31 = true;
-            Debug.Log("SphereCollider31");
+           // Debug.Log("SphereCollider31");
         }
 		if (col.gameObject.name == "SphereCollider41")
         {
             Colliding41 = true;
-            Debug.Log("SphereCollider41");
+           // Debug.Log("SphereCollider41");
         }
 		if (col.gameObject.name == "SphereCollider4")
         {
             Colliding4 = true;
-            Debug.Log("SphereCollider4");
+           // Debug.Log("SphereCollider4");
         }
 		if (col.gameObject.name == "SphereCollider5")
         {
             Colliding5 = true;
-            Debug.Log("SphereCollider5");
+           // Debug.Log("SphereCollider5");
         }
 		if (col.gameObject.name == "SphereCollider51")
         {
             Colliding51 = true;
-            Debug.Log("SphereCollider51");
+           // Debug.Log("SphereCollider51");
         }
 		if (col.gameObject.name == "SphereCollider61")
         {
             Colliding61 = true;
-            Debug.Log("SphereCollider61");
+         //   Debug.Log("SphereCollider61");
         }
 		if (col.gameObject.name == "SphereCollider6")
         {
             Colliding6 = true;
-            Debug.Log("SphereCollider6");
+         //   Debug.Log("SphereCollider6");
         }
 		if (col.gameObject.name == "SphereCollider71")
         {
             Colliding71 = true;
-            Debug.Log("SphereCollider71");
+         //   Debug.Log("SphereCollider71");
         }
 		if (col.gameObject.name == "SphereCollider7")
         {
             Colliding7 = true;
-            Debug.Log("SphereCollider7");
+         //   Debug.Log("SphereCollider7");
         }
 		if (col.gameObject.name == "SphereCollider8")
         {
             Colliding8 = true;
-            Debug.Log("SphereCollider8");
+          //  Debug.Log("SphereCollider8");
         }
 		if (col.gameObject.name == "SphereCollider81")
         {
             Colliding81 = true;
-            Debug.Log("SphereCollider81");
+          //  Debug.Log("SphereCollider81");
         }
 		if (col.gameObject.name == "SphereCollider91")
         {
             Colliding91 = true;
-            Debug.Log("SphereCollider91");
+          //  Debug.Log("SphereCollider91");
         }
 		if (col.gameObject.name == "SphereCollider9")
         {
             Colliding9 = true;
-            Debug.Log("SphereCollider9");
+         //   Debug.Log("SphereCollider9");
         }
     }
 

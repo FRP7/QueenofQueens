@@ -21,6 +21,7 @@ public class Interactible : MonoBehaviour
     public int State;
     Collider m_Collider;
 	public bool isRotatableQuadrado;
+	public bool isswordpickable;
 
     public void Activate()
     {
@@ -43,6 +44,7 @@ public class Interactible : MonoBehaviour
     {
 		
 		Rotatequadrados();
+		PickSword();
 		
         if (isPuzzle2)
         {
@@ -193,6 +195,17 @@ public class Interactible : MonoBehaviour
 					{
 						transform.Rotate(0,0,90);
 					}
+			}
+		}	
+	}
+	
+	private void PickSword() 
+	{
+		if(isInteractive)
+		{
+			if(isswordpickable)
+			{
+				Debug.Log("Picked sword!");
 			}
 		}	
 	}
