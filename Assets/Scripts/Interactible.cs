@@ -21,8 +21,7 @@ public class Interactible : MonoBehaviour
     public int State;
     Collider m_Collider;
 	public bool isRotatableQuadrado;
-	public bool isswordpickable;
-	public bool allowsswordplacement;
+	public bool isSwordPickable;
 
     public void Activate()
     {
@@ -205,7 +204,7 @@ public class Interactible : MonoBehaviour
 	{
 		if(isInteractive)
 		{
-			if(isswordpickable)
+			if(isSwordPickable)
 			{
 				Debug.Log("Picked sword!");
 			}
@@ -216,7 +215,7 @@ public class Interactible : MonoBehaviour
 	{
 		if(isInteractive)
 		{
-			if(allowsswordplacement)
+			if(allowsPlacement && isActive)
 			{
 				Debug.Log("You put sword!");
 			}

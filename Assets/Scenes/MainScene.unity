@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4479578, g: 0.49795955, b: 0.5754917, a: 1}
+  m_IndirectSpecularColor: {r: 0.44795793, g: 0.4979596, b: 0.5754917, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2056,8 +2056,7 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 0
-  isswordpickable: 0
-  allowsswordplacement: 0
+  isSwordPickable: 0
 --- !u!65 &200961156
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2267,8 +2266,7 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 0
-  isswordpickable: 0
-  allowsswordplacement: 0
+  isSwordPickable: 0
 --- !u!64 &214114372
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2936,8 +2934,7 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 0
-  isswordpickable: 1
-  allowsswordplacement: 0
+  isSwordPickable: 0
 --- !u!65 &292323784
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2948,8 +2945,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.7332071, y: 1, z: 8.49197}
+  m_Center: {x: 0.05376149, y: 0, z: 0.2315665}
 --- !u!23 &292323785
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3485,8 +3482,7 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 0
-  isswordpickable: 0
-  allowsswordplacement: 0
+  isSwordPickable: 0
 --- !u!65 &345419509
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7040,8 +7036,7 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 0
-  isswordpickable: 1
-  allowsswordplacement: 0
+  isSwordPickable: 0
 --- !u!65 &827054407
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7052,8 +7047,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.9003496, y: 0.9999996, z: 2.0508296}
+  m_Center: {x: 0.021299759, y: 0, z: -0.06933399}
 --- !u!23 &827054408
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7329,8 +7324,7 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 0
-  isswordpickable: 0
-  allowsswordplacement: 0
+  isSwordPickable: 0
 --- !u!82 &862579272
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7623,8 +7617,7 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 0
-  isswordpickable: 0
-  allowsswordplacement: 0
+  isSwordPickable: 0
 --- !u!1 &930413949
 GameObject:
   m_ObjectHideFlags: 0
@@ -8411,8 +8404,7 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 0
-  isswordpickable: 0
-  allowsswordplacement: 0
+  isSwordPickable: 0
 --- !u!65 &992297440
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9061,8 +9053,7 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 0
-  isswordpickable: 0
-  allowsswordplacement: 0
+  isSwordPickable: 0
 --- !u!95 &1070511937
 Animator:
   serializedVersion: 3
@@ -9109,9 +9100,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1857533636}
-  - {fileID: 1872363206}
-  - {fileID: 1219700055}
-  - {fileID: 1635343756}
+  - {fileID: 1680300963}
   m_Father: {fileID: 492771182}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9125,8 +9114,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.8523002, y: 2.3444157, z: 0.83161545}
+  m_Center: {x: -0.8440194, y: 6.1465807, z: -17.254126}
 --- !u!114 &1113964873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9142,7 +9131,7 @@ MonoBehaviour:
   isActive: 1
   isPickable: 0
   allowsPlacement: 1
-  allowsMultipleInteractions: 0
+  allowsMultipleInteractions: 1
   requirementText: Requires sword
   interactionText: Put sword part
   consumesRequirements: 1
@@ -9154,8 +9143,7 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 0
-  isswordpickable: 0
-  allowsswordplacement: 1
+  isSwordPickable: 0
 --- !u!114 &1115862314 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114219734589780404, guid: 05521cc354a44594da1eb2aa145e30cb,
@@ -9476,8 +9464,7 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 0
-  isswordpickable: 0
-  allowsswordplacement: 0
+  isSwordPickable: 0
 --- !u!1 &1153777159 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1873276507756570, guid: 05521cc354a44594da1eb2aa145e30cb,
@@ -9511,8 +9498,7 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 0
-  isswordpickable: 0
-  allowsswordplacement: 0
+  isSwordPickable: 0
 --- !u!64 &1153777162
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10606,8 +10592,7 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 0
-  isswordpickable: 0
-  allowsswordplacement: 0
+  isSwordPickable: 0
 --- !u!1 &1215836926
 GameObject:
   m_ObjectHideFlags: 0
@@ -10723,11 +10708,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1219700054}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8692348, y: 6.546, z: -17.18}
+  m_LocalPosition: {x: 19.82583, y: 6.2659698, z: -51.262318}
   m_LocalScale: {x: 0.3094116, y: 0.04147099, z: 0.0398}
   m_Children: []
-  m_Father: {fileID: 1113964871}
-  m_RootOrder: 2
+  m_Father: {fileID: 1680300963}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1219700056
 BoxCollider:
@@ -12081,7 +12066,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1352474804}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -12193,8 +12178,7 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 0
-  isswordpickable: 0
-  allowsswordplacement: 0
+  isSwordPickable: 0
 --- !u!65 &1356233665
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12239,8 +12223,7 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 0
-  isswordpickable: 0
-  allowsswordplacement: 0
+  isSwordPickable: 0
 --- !u!65 &1357724818
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14049,11 +14032,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1635343755}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8692348, y: 6.797, z: -17.178}
+  m_LocalPosition: {x: 19.82583, y: 6.5169697, z: -51.260315}
   m_LocalScale: {x: 0.10423211, y: 0.47861904, z: 0.008494912}
   m_Children: []
-  m_Father: {fileID: 1113964871}
-  m_RootOrder: 3
+  m_Father: {fileID: 1680300963}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1635343757
 BoxCollider:
@@ -14217,6 +14200,49 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1678703795}
   m_CullTransparentMesh: 0
+--- !u!1 &1680300962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1680300963}
+  - component: {fileID: 1680300964}
+  m_Layer: 0
+  m_Name: espada
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1680300963
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1680300962}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -20.695065, y: 0.28003025, z: 34.082317}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1219700055}
+  - {fileID: 1872363206}
+  - {fileID: 1635343756}
+  m_Father: {fileID: 1113964871}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1680300964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1680300962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 316d55f66b8e198419063786c4a28cc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1686761785 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000014176288026, guid: 172be7e73ff11f64bacaf4a4c1670685,
@@ -15246,8 +15272,7 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 0
-  isswordpickable: 0
-  allowsswordplacement: 0
+  isSwordPickable: 0
 --- !u!4 &1828867244 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010477212442, guid: 49547c987cae26f41b6395c299b0dc50,
@@ -15363,7 +15388,6 @@ GameObject:
   - component: {fileID: 1857533636}
   - component: {fileID: 1857533635}
   - component: {fileID: 1857533634}
-  - component: {fileID: 1857533633}
   m_Layer: 0
   m_Name: base
   m_TagString: Untagged
@@ -15371,18 +15395,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &1857533633
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1857533632}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1857533634
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15473,10 +15485,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1872363205}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8692348, y: 6.415, z: -17.178}
+  m_LocalPosition: {x: 19.82583, y: 6.1349697, z: -51.260315}
   m_LocalScale: {x: 0.06978467, y: 0.23042, z: 0.03980238}
   m_Children: []
-  m_Father: {fileID: 1113964871}
+  m_Father: {fileID: 1680300963}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1872363207
@@ -15593,8 +15605,7 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 0
-  isswordpickable: 0
-  allowsswordplacement: 0
+  isSwordPickable: 0
 --- !u!65 &1878637570
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16340,8 +16351,7 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 0
-  isswordpickable: 1
-  allowsswordplacement: 0
+  isSwordPickable: 0
 --- !u!65 &1988185203
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16352,8 +16362,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.1089619, y: 1.6956469, z: 1.7388502}
+  m_Center: {x: 0.0013430838, y: 0.013831275, z: -0.21282753}
 --- !u!23 &1988185204
 MeshRenderer:
   m_ObjectHideFlags: 0
