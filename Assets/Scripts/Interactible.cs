@@ -23,11 +23,15 @@ public class Interactible : MonoBehaviour
 	public bool isRotatableQuadrado;
 	public bool isSwordPickable;
 	
-	public Player playerinstance;
+	public Player playerinstance;  
+	
 	
 	public void Start()
 	{
 		playerinstance = GameObject.FindWithTag("Player").GetComponent<Player>();
+		
+		//GameObject.Find("espada").GetComponent<Renderer>().enabled = false;
+		
 	}
 
     public void Activate()
@@ -225,15 +229,16 @@ public class Interactible : MonoBehaviour
 		{
 			if(allowsPlacement && isActive)
 			{
-				//Debug.Log("Put your sword!");
-				/*if(Player.PegaPickable)
+		
+				if(playerinstance.GetComponent<Player>().HasInInventory(playerinstance.PegaPickable) &&
+				 playerinstance.GetComponent<Player>().HasInInventory(playerinstance.MeioPickable) &&
+					playerinstance.GetComponent<Player>().HasInInventory(playerinstance.LaminaPickable))
 				{
-					Debug.Log("Mete a pega!");
-				}*/
-				if(playerinstance.GetComponent<Player>().HasInInventory(playerinstance.PegaPickable))
-				{
-					Debug.Log("Mete a pega!");
+					Debug.Log("Mete as pecas!");
+					//PlacePlaceables();
+					//GameObject.Find("espada").SetActive(true);
 				}
+				
 			}
 		}	
 	}

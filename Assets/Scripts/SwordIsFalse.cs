@@ -4,13 +4,24 @@ using UnityEngine;
 
 public class SwordIsFalse : MonoBehaviour {
 
-	// Use this for initialization
+	//public Renderer RendEspada;
+
 	void Start () {
+		gameObject.SetActive(false);
+		//SwordSetActive();
+		//SwordRenderer();
+		//SwordSetActive();
+	}
+	
+	public void SwordSetActive()
+	{
 		gameObject.SetActive(false);
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	/*public void SwordRenderer()
+	{
+		RendEspada = GetComponent<Renderer>();
+        RendEspada.enabled = false;
+	}*/
+	
 }
