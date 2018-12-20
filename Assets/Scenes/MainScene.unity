@@ -8011,6 +8011,25 @@ Prefab:
       propertyPath: field of view
       value: 77
       objectReference: {fileID: 0}
+    - target: {fileID: 114732638752043022, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 2}
+      propertyPath: PegaPickable
+      value: 
+      objectReference: {fileID: 827054406}
+    - target: {fileID: 114732638752043022, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 2}
+      propertyPath: MeioPickable
+      value: 
+      objectReference: {fileID: 1988185202}
+    - target: {fileID: 114732638752043022, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 2}
+      propertyPath: LaminaPickable
+      value: 
+      objectReference: {fileID: 292323783}
+    - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabAsset: 0
@@ -9084,7 +9103,7 @@ GameObject:
   - component: {fileID: 1113964872}
   m_Layer: 0
   m_Name: Puzzle4
-  m_TagString: Untagged
+  m_TagString: Puzzle4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Teacher
   - Puzzle2
+  - Pecinha
+  - SphereCollider
+  - Puzzle4
   layers:
   - Default
   - TransparentFX

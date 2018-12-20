@@ -17,6 +17,9 @@ public class Player : MonoBehaviour
     public Interactible pickableHeart;
     public Interactible balance;
     public Interactible jewel;
+	public Interactible PegaPickable;
+	public Interactible MeioPickable;
+	public Interactible LaminaPickable;
     public int itemsRequiredInInv;
 
     private void Start()
@@ -154,7 +157,7 @@ public class Player : MonoBehaviour
 
     }
 
-    private void AddToInventory(Interactible pickable)
+    public void AddToInventory(Interactible pickable)
     {
         if (_inventory.Count < inventorySize)
         {
@@ -166,6 +169,18 @@ public class Player : MonoBehaviour
         {
             balance.State = 1;
         }
+		if(pickable == PegaPickable)
+		{
+			Debug.Log("Pegaste na pega!");
+		}
+		if(pickable == MeioPickable)
+		{
+			Debug.Log("Pegaste no meio!");
+		}
+		if(pickable == LaminaPickable)
+		{
+			Debug.Log("Pegaste na lamina!");
+		}
     }
 
     public bool HasInInventory(Interactible pickable)

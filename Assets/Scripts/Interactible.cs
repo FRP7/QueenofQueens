@@ -22,6 +22,13 @@ public class Interactible : MonoBehaviour
     Collider m_Collider;
 	public bool isRotatableQuadrado;
 	public bool isSwordPickable;
+	
+	public Player playerinstance;
+	
+	public void Start()
+	{
+		playerinstance = GameObject.FindWithTag("Player").GetComponent<Player>();
+	}
 
     public void Activate()
     {
@@ -67,6 +74,7 @@ public class Interactible : MonoBehaviour
                     isInteractive = false;
             }
         }
+		
         else
         {
             PlacePlaceables();
@@ -217,9 +225,17 @@ public class Interactible : MonoBehaviour
 		{
 			if(allowsPlacement && isActive)
 			{
-				Debug.Log("You put sword!");
+				//Debug.Log("Put your sword!");
+				/*if(Player.PegaPickable)
+				{
+					Debug.Log("Mete a pega!");
+				}*/
+				if(playerinstance.GetComponent<Player>().HasInInventory(playerinstance.PegaPickable))
+				{
+					Debug.Log("Mete a pega!");
+				}
 			}
-		}
+		}	
 	}
 
 
