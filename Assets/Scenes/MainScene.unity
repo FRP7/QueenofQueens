@@ -9159,7 +9159,7 @@ MonoBehaviour:
   isActive: 1
   isPickable: 0
   allowsPlacement: 1
-  allowsMultipleInteractions: 1
+  allowsMultipleInteractions: 0
   requirementText: Requires sword
   interactionText: Put sword part
   consumesRequirements: 1
@@ -9167,7 +9167,8 @@ MonoBehaviour:
   - {fileID: 827054406}
   - {fileID: 1988185202}
   - {fileID: 292323783}
-  indirectInteractibles: []
+  indirectInteractibles:
+  - {fileID: 1680300965}
   indirectActivations:
   - {fileID: 1113964873}
   isPuzzle2: 0
@@ -9176,7 +9177,7 @@ MonoBehaviour:
   State: 0
   isRotatableQuadrado: 0
   isSwordPickable: 0
-  playerinstance: {fileID: 0}
+  playerinstance: {fileID: 1807407526}
 --- !u!114 &1115862314 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114219734589780404, guid: 05521cc354a44594da1eb2aa145e30cb,
@@ -14247,6 +14248,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1680300963}
   - component: {fileID: 1680300964}
+  - component: {fileID: 1680300965}
   m_Layer: 0
   m_Name: espada
   m_TagString: Untagged
@@ -14281,6 +14283,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 316d55f66b8e198419063786c4a28cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1680300965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1680300962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4618469525224204c83ab231b0f896fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractive: 1
+  isActive: 0
+  isPickable: 0
+  allowsPlacement: 0
+  allowsMultipleInteractions: 0
+  requirementText: 
+  interactionText: 
+  consumesRequirements: 0
+  inventoryRequirements: []
+  indirectInteractibles: []
+  indirectActivations: []
+  isPuzzle2: 0
+  isRotatable: 0
+  rotations: 0
+  State: 0
+  isRotatableQuadrado: 0
+  isSwordPickable: 0
+  playerinstance: {fileID: 0}
 --- !u!4 &1686761785 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000014176288026, guid: 172be7e73ff11f64bacaf4a4c1670685,
@@ -15100,6 +15131,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1797542334}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1807407526 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114732638752043022, guid: 5e9e851c0e142814dac026a256ba2ac0,
+    type: 2}
+  m_PrefabInternal: {fileID: 939875212}
+  m_Script: {fileID: 11500000, guid: 045ef1278b0aeab4bb4bbb75409ca706, type: 3}
 --- !u!1 &1815497682
 GameObject:
   m_ObjectHideFlags: 0
