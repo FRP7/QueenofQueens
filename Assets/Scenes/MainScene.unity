@@ -7948,7 +7948,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 7.02
+      value: -5.99
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -9163,14 +9163,9 @@ MonoBehaviour:
   requirementText: Requires sword
   interactionText: Put sword part
   consumesRequirements: 1
-  inventoryRequirements:
-  - {fileID: 827054406}
-  - {fileID: 1988185202}
-  - {fileID: 292323783}
-  indirectInteractibles:
-  - {fileID: 1680300965}
-  indirectActivations:
-  - {fileID: 1113964873}
+  inventoryRequirements: [{fileID: 827054406}, {fileID: 1988185202}, {fileID: 292323783}]
+  indirectInteractibles: [{fileID: 1680300965}]
+  indirectActivations: [{fileID: 1113964873}]
   isPuzzle2: 0
   isRotatable: 0
   rotations: 0
