@@ -27,14 +27,14 @@ public class Puzzle1Collider : MonoBehaviour
         }
     }
 
-    public void OnTriggerExit(Collider col1)
+    public void OnTriggerExit(Collider col)
     {
-        if (col1.gameObject.name == "ColliderInner")
+        if (col.gameObject.name == "ColliderInner")
         {
             CollidingInner = false;
             Debug.Log("Inner collision");
         }
-        if (col1.gameObject.name == "ColliderOuter")
+        if (col.gameObject.name == "ColliderOuter")
         {
             CollidingOuter = false;
             Debug.Log("Outer collision");
