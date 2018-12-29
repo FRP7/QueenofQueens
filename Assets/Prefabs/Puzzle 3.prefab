@@ -1190,7 +1190,7 @@ Transform:
   - {fileID: 4702810712334412}
   - {fileID: 4349972457372264}
   m_Father: {fileID: 4998613427199300}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4113341016845620
 Transform:
@@ -1359,7 +1359,7 @@ Transform:
   m_LocalScale: {x: 0.10119133, y: 0.44329, z: 0.02117}
   m_Children: []
   m_Father: {fileID: 4998613427199300}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: -0.001, z: 90.00001}
 --- !u!4 &4245337727256926
 Transform:
@@ -1376,7 +1376,7 @@ Transform:
   - {fileID: 4998810073710190}
   - {fileID: 4988409077218834}
   m_Father: {fileID: 4998613427199300}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4273921479594180
 Transform:
@@ -1692,7 +1692,7 @@ Transform:
   - {fileID: 4794210391517984}
   - {fileID: 4031585196616468}
   m_Father: {fileID: 4998613427199300}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 450}
 --- !u!4 &4735604963540992
 Transform:
@@ -1826,7 +1826,7 @@ Transform:
   - {fileID: 4525681098705460}
   - {fileID: 4118460149843862}
   m_Father: {fileID: 4998613427199300}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 450}
 --- !u!4 &4902801289858034
 Transform:
@@ -1881,7 +1881,7 @@ Transform:
   m_LocalScale: {x: 0.09257676, y: 0.44329, z: 0.021170001}
   m_Children: []
   m_Father: {fileID: 4998613427199300}
-  m_RootOrder: 8
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4942654128192024
 Transform:
@@ -1954,9 +1954,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1098152336931660}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.0000029504295}
-  m_LocalPosition: {x: 4.936, y: -5.381, z: -36.70125}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.95038915, z: -0, w: -0.31106344}
+  m_LocalPosition: {x: -33.72, y: 33.72, z: -41.25}
+  m_LocalScale: {x: 1.0318546, y: 1, z: 0.97685426}
   m_Children:
   - {fileID: 4596873423522726}
   - {fileID: 4324258788416938}
@@ -1964,15 +1964,15 @@ Transform:
   - {fileID: 4918830881556352}
   - {fileID: 4091760176079544}
   - {fileID: 4714384626337370}
-  - {fileID: 4222836633904896}
   - {fileID: 4245337727256926}
-  - {fileID: 4919891974426152}
   - {fileID: 4884210190370232}
   - {fileID: 4108027484103190}
+  - {fileID: 4222836633904896}
   - {fileID: 4730177755730378}
+  - {fileID: 4919891974426152}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -360, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -143.753, z: 0}
 --- !u!4 &4998810073710190
 Transform:
   m_ObjectHideFlags: 1
@@ -5282,6 +5282,8 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 1
+  isSwordPickable: 0
+  playerinstance: {fileID: 0}
 --- !u!114 &114325248019524398
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5309,6 +5311,8 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 1
+  isSwordPickable: 0
+  playerinstance: {fileID: 0}
 --- !u!114 &114350850459110866
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5336,6 +5340,8 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 1
+  isSwordPickable: 0
+  playerinstance: {fileID: 0}
 --- !u!114 &114359449045927884
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5363,6 +5369,8 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 1
+  isSwordPickable: 0
+  playerinstance: {fileID: 0}
 --- !u!114 &114416385784159780
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5374,6 +5382,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16cfce365f6f93b4f97d58815d5cabb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PuzzleUnlocks: {fileID: 0}
+  Reward_pointer: {fileID: 0}
 --- !u!114 &114492205835512980
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5401,6 +5411,8 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 1
+  isSwordPickable: 0
+  playerinstance: {fileID: 0}
 --- !u!114 &114523209046960016
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5428,6 +5440,8 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 1
+  isSwordPickable: 0
+  playerinstance: {fileID: 0}
 --- !u!114 &114751478812840940
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5455,6 +5469,8 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 1
+  isSwordPickable: 0
+  playerinstance: {fileID: 0}
 --- !u!114 &114921537607792936
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5482,6 +5498,8 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 1
+  isSwordPickable: 0
+  playerinstance: {fileID: 0}
 --- !u!114 &114985238757042268
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5509,6 +5527,8 @@ MonoBehaviour:
   rotations: 0
   State: 0
   isRotatableQuadrado: 1
+  isSwordPickable: 0
+  playerinstance: {fileID: 0}
 --- !u!135 &135041617094810444
 SphereCollider:
   m_ObjectHideFlags: 1

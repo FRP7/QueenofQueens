@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Puzzle3Collider : MonoBehaviour {
 
+    public GameObject PuzzleUnlocks;
     public GameObject Reward_pointer;
     bool Colliding11 = false;
 	bool Colliding1 = false;
@@ -144,8 +145,10 @@ public class Puzzle3Collider : MonoBehaviour {
     {
         if (AllColliding == true)
         {
-            Animator animation = Reward_pointer.GetComponent<Animator>();
-            animation.SetTrigger("Interact");
+            Animator animation1 = Reward_pointer.GetComponent<Animator>();
+            animation1.SetTrigger("Interact");
+            Animator animation2 = PuzzleUnlocks.GetComponent<Animator>();
+            animation2.SetTrigger("Open");
         }
     }
 
