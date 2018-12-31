@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LeverIsFalse : MonoBehaviour {
+public class IsFalseOnStart : MonoBehaviour {
 
 	void Start () {
         gameObject.SetActive(false);

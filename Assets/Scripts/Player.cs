@@ -85,9 +85,8 @@ public class Player : MonoBehaviour
         if (_currentInteractible.tag == "Teacher")
         {
             if (HasAtLeastOneRequirement(_currentInteractible)) {
-                _currentInteractible.requirementText = "Bring me more Hieroglyphs and dont forget the Jewel!";
+                _currentInteractible.requirementText = "Bring me more Hieroglyphs !";
                     if(HasInInventory(jewel)) _currentInteractible.requirementText = "Bring me more Hieroglyphs !";
-                if (HasLengthMinuesOne(_currentInteractible)) _currentInteractible.requirementText = "Acording to the hierogliphs u must place the Heart to escape with the jewel";
             }
         }
         if (_currentInteractible.tag == "Puzzle2")
