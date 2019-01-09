@@ -10,10 +10,20 @@ public class MainMenu : MonoBehaviour {
 		Screen.lockCursor = false;
 		Cursor.visible = true;
 	}
+	
+	public void GoToMenu ()
+	{
+		SceneManager.LoadScene("Menu");
+	}
 
 	public void PlayGame ()
 	{
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+	}
+	
+	public void Credits() 
+	{
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
 	}
 	
 	public void QuitGame ()
