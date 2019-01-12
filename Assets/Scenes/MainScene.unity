@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44795793, g: 0.4979596, b: 0.5754917, a: 1}
+  m_IndirectSpecularColor: {r: 0.447958, g: 0.49795997, b: 0.57549244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9250,9 +9250,9 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: [{fileID: 64000010659317006, guid: aa3fd21b3a285ca48b79d4849e689f2f,
-        type: 2}, {fileID: 65000011232850722, guid: aa3fd21b3a285ca48b79d4849e689f2f,
-        type: 2}]
+    m_RemovedComponents:
+    - {fileID: 64000010659317006, guid: aa3fd21b3a285ca48b79d4849e689f2f, type: 2}
+    - {fileID: 65000011232850722, guid: aa3fd21b3a285ca48b79d4849e689f2f, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: aa3fd21b3a285ca48b79d4849e689f2f, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &521833502
@@ -15754,6 +15754,11 @@ Prefab:
       propertyPath: m_FootstepSounds.Array.data[1]
       value: 
       objectReference: {fileID: 8300000, guid: 3ff9fcf8763db443d8c48710cdf9ab60, type: 3}
+    - target: {fileID: 114732638752043022, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 2}
+      propertyPath: inventorySize
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabAsset: 0
@@ -18286,8 +18291,8 @@ Prefab:
       propertyPath: m_Size.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: [{fileID: 64000010659317006, guid: aa3fd21b3a285ca48b79d4849e689f2f,
-        type: 2}]
+    m_RemovedComponents:
+    - {fileID: 64000010659317006, guid: aa3fd21b3a285ca48b79d4849e689f2f, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: aa3fd21b3a285ca48b79d4849e689f2f, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &1063254956 stripped
