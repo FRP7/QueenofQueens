@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
 	public Interactible PegaPickable;
 	public Interactible MeioPickable;
 	public Interactible LaminaPickable;
+    public GameObject Mark;
     public int itemsRequiredInInv;
 
     private void Start()
@@ -146,12 +147,15 @@ public class Player : MonoBehaviour
                 heart.isInteractive = false;
                 AddToInventory(jewel);
             }
-            else
+            else if (_currentInteractible.isPuzzle2)
                 jewel.gameObject.SetActive(true);
 
         }
 
         interactible.Interact();
+        if (_currentInteractible.tag == "Teacher")
+            Mark.SetActive(false);
+
 
     }
 
