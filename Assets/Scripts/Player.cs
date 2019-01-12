@@ -86,7 +86,6 @@ public class Player : MonoBehaviour
         {
             if (HasAtLeastOneRequirement(_currentInteractible)) {
                 _currentInteractible.requirementText = "Bring me more Hieroglyphs !";
-                    if(HasInInventory(jewel)) _currentInteractible.requirementText = "Bring me more Hieroglyphs !";
             }
         }
         if (_currentInteractible.tag == "Puzzle2")
