@@ -2131,6 +2131,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 3.542714, z: 1.0000011}
   m_Center: {x: -0.00000023841858, y: 0.0013005137, z: 0}
+--- !u!114 &112385496 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0,
+    type: 2}
+  m_PrefabInternal: {fileID: 939875212}
+  m_Script: {fileID: 11500000, guid: 05ec5cf00ca181d45a42ba1870e148c3, type: 3}
 --- !u!1 &112458138
 GameObject:
   m_ObjectHideFlags: 0
@@ -38547,6 +38553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f7ce6a5a6d93d469e8cc7057f3dc02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fpsController: {fileID: 112385496}
   pauseMenuUI: {fileID: 1195741938}
 --- !u!1 &1969460747
 GameObject:
