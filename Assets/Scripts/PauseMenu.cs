@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityStandardAssets.Characters.FirstPerson;  //lock fps
 
 public class PauseMenu : MonoBehaviour {
 
@@ -9,10 +10,9 @@ public class PauseMenu : MonoBehaviour {
 	
 	public GameObject pauseMenuUI;
 	
-	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.Q))
+		if(Input.GetKeyDown(KeyCode.Escape))
 		{
 			if (GameisPaused)
 			{
@@ -36,6 +36,7 @@ public class PauseMenu : MonoBehaviour {
 		pauseMenuUI.SetActive(true);
 		Time.timeScale = 0f;
 		GameisPaused = true;
+
 	}
 	
 	public void LoadMenu()

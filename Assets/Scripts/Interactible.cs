@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Interactible : MonoBehaviour
 {
@@ -22,6 +23,8 @@ public class Interactible : MonoBehaviour
     Collider m_Collider;
 	public bool isRotatableQuadrado;
 	public bool isSwordPickable;
+	public bool CanYouOpenCleopatra;
+	public bool CanYouFinishGame;
 	
 	public Player playerinstance;  
 	
@@ -57,6 +60,8 @@ public class Interactible : MonoBehaviour
 		Rotatequadrados();
 		PickSword();
 		PutSword();
+		OpenCleopatraTomb();
+		FinishGame();
 		
         if (isPuzzle2)
         {
@@ -241,6 +246,26 @@ public class Interactible : MonoBehaviour
 				
 			}
 		}	
+	}
+	
+	private void OpenCleopatraTomb()
+	{
+		if (isInteractive)
+		{
+			if(CanYouOpenCleopatra)
+			{
+				Debug.Log("Abriu");
+			}
+		}
+	}
+	
+	public void FinishGame()
+	{
+		if(CanYouFinishGame)
+		{
+			Debug.Log("Finish");
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+		}
 	}
 
 

@@ -7,8 +7,9 @@ public class MainMenu : MonoBehaviour {
 
 	void Start()
 	{
-		Screen.lockCursor = false;
+		/*Screen.lockCursor = false;*/
 		Cursor.visible = true;
+		Cursor.lockState = CursorLockMode.None;
 	}
 	
 	public void GoToMenu ()
